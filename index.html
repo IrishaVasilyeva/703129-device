@@ -15,12 +15,13 @@
 			</div>
 			<ul class="user-navigation">	
 				<li><a href="#">Поиск по сайту</a></li>
-				<li><a href="#">Войти</a></li>
+				<li class="?"><a class="?" href="#">Войти</a></li>
 				<li><a href="#">Сравнить</a></li>
 				<li><a href="#">Корзина</a></li>				
 			</ul>
 			<ul class="site-navigation">
 				<li><a href="catalog.html">Каталог товаров</a>
+					<button>Открыть</button>
 					<!-- Выпадающее меню с каталогом -->
 					<ul class="catalog-menu-navigation">
 						<li><a href="#">Виртуальная реальность</a>
@@ -40,6 +41,14 @@
 
 		<section class="slider">
 		<h1 class="visually-hidden">Хит товары</h1>
+
+		    <div class="slider-button">
+		    	<button class="slider-button-item">1</button>
+		        <button class="slider-button-item">2</button>
+		        <button class="slider-button-item">3</button>			
+		    </div>
+
+
 		    <div class="slider-item">
 			    <span>01</span>
 			    <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">	
@@ -121,10 +130,11 @@
 
 		<section class="services">
 			<h2 class="visually-hidden">Услуги</h2>
-			<ul>
-				<li><a class="button button-active">Доставка</a></li>
-				<li><a class="button" href="#">Гарантия</a></li>
-				<li><a class="button" href="#">Кредит</a></li>
+
+			<ul class="services-button">
+				<li><button class="button">Доставка</button></li>
+				<li><button class="button">Гарантия</button></li>
+				<li><button class="button">Кредит</button></li>
 			</ul>
 
 
@@ -215,14 +225,31 @@
 
 	<section class="modal modal-send">
 		<h2 class="visually-hidden">Форма обратной связи</h2>
-		<!--здесь будет форма-->
-		<span class="modal-close">x</span>
+		<form class="modal-form-send" action="https://echo.htmlacademy.ru" method="post">
+			<p class="modal-item">
+				<label class="visually-hidden" for="modal-item-name">Ваше имя:</label>
+			    <input id="modal-item-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+		    </p>
+		    <p class="modal-item">
+		    	<label class="visually-hidden" for="modal-item-email">Ваш e-mail:</label>
+			    <input id="modal-item-email" type="text" name="email" value="" placeholder="email@example.com">
+		    </p>
+		    <p class="modal-item">
+		    	<label class="visually-hidden" for="modal-item-letter-text">Текст письма:</label>
+			    <input id="modal-item-letter-text" type="text" name="letter-text" value="" placeholder="В свободной форме">
+		    </p>
+		    <button class="button" type="submit">Отправить</button>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 
 
 	<section class="modal modal-map">
       <h2 class="visually-hidden">Как добраться</h2>
-      <span class="modal-close">x</span>
+      <p>
+      	<img src="img/map-big.png" width="960" height="559" alt="Наш адрес Санкт-Петербург, улица Строителей, 15">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
 
