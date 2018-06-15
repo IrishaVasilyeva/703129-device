@@ -1,0 +1,341 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'), 
+       url('../fonts/gilroyextrabold.woff') format('woff'),
+       url('../fonts/gilroy/Gilroyextrabold.ttf') format('ttf');
+       font-weight: 800;
+       font-style: normal;
+   }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroylight.woff2') format('woff2'), 
+       url('../fonts/gilroylight.woff') format('woff'),
+       url('../fonts/gilroy/Gilroylight.ttf') format('ttf');
+       font-weight: 300;
+       font-style: normal;
+   }
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: url('../fonts/opensans.woff2') format('woff2'), 
+       url('../fonts/opensans.woff') format('woff'),
+       url('../fonts/OpenSans-Regular.ttf') format('ttf');
+       font-weight: 400;
+       font-style: normal;
+   }
+
+ @font-face {
+  font-family: 'Open-Sans';
+  src: url('../fonts/opensanslight.woff2') format('woff2'), 
+       url('../fonts/opensanslight.woff') format('woff'),
+       url('../fonts/OpenSans-Light.ttf') format('ttf');
+       font-weight: 300;
+       font-style: normal;
+   }
+
+   body {
+   	margin: 0;
+   	padding: 0;
+
+   	font-family: "Open-Sans", Arial, sans-serif;
+   	font-size: 15px;
+   	line-height: 30px;
+   	font-weight: 400;
+    color: #464646;
+
+    background-color: #ffffff;
+   }
+
+   a {
+   	text-decoration: none;
+   }
+
+   .main-navigation {
+   	color: #000000;
+   	background-color: #f7e296;
+   }
+
+   .user-navigation,
+   .site-navigation,
+   .catalog-menu-navigation {
+   	list-style: none;
+   }
+
+   .user-navigation a,
+   .site-navigation a {
+   	color: #000000;
+   }
+
+   .user-navigation a:hover,
+   .user-navigation a:focus,
+   .site-navigation a:hover,
+   .site-navigation a:focus,
+   .logo a:hover,
+   .logo a:focus {
+   	color: rgba(0, 0, 0, 0.6);
+   }
+
+   .user-navigation a:active,
+   .site-navigation a:active,
+   .logo a:active {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+   
+   .logo a {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 48px;
+   	line-height: 48px;
+   	font-weight: 800;
+   	text-transform: uppercase;
+   }
+
+   .logo-main a:hover,
+   .logo-main a:focus,
+   .logo-main a:active {
+   	color: #000000;
+   }
+
+   .search a {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+   .search a:hover,
+   .search a:focus {
+   	color: rgba(0, 0, 0, 0.6);
+   }
+
+   .site-navigation a,
+   .slider-item a {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	text-transform: uppercase;
+   }
+
+   .catalog-menu-navigation a {
+   	font-family: Open-Sans, Arial, sans-serif;
+   	font-size: 15px;
+   	line-height: 36px;
+   	font-weight: 400;
+   	text-transform: none;
+   }
+
+   .slider-list {
+   	list-style: none;
+   }
+
+   .slider-item span {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 179.2px;
+   	line-height: 179.2px;
+   	font-weight: 800;
+   	color: #ffffff;
+   }
+
+   .slider-item h2 {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 47px;
+   	line-height: 56px;
+   	font-weight: 800;
+    color: #000000;
+   }
+
+   p.value {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 36px;
+   	line-height: 48px;
+   	font-weight: 300;
+   	color: #000000;
+   }
+
+   p.options {
+   	font-family: Open-Sans;
+   	font-size: 13px;
+   	line-height: 20px;
+   	font-weight: 300;
+   	color: #464646;
+   }
+
+   .popular-list {
+   	list-style: none;
+   }
+
+   .popular-list a {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	color: #000000;
+   }
+
+   .slider-item a {
+   	color: #000000;
+   }
+
+   .slider-item a:active,
+   .popular-list a:active {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+   .services {
+   	background-color: #e5e5e5;
+   }
+
+   .services-button {
+   	list-style: none;
+   }
+
+   .services-button button {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+
+   	text-align: center;
+   	vertical-align: middle;
+   	color: #000000;
+   	background-color: #e5e5e5;
+   	text-transform: uppercase;
+   	border: none;
+   }
+
+   .services-button button:active {
+   	color: #f7e184;
+   }
+
+   .services-item h3,
+   .about-us h2,
+   .contacts h2 {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 47px;
+   	line-height: 48px;
+   	font-weight: 800;
+   	color: #000000;
+   }
+
+   .partners-list {
+   	list-style: none;     
+   }
+
+   .about-us-list {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 16px;
+   	line-height: 40px;
+   	font-weight: 800;
+   	color: #000000;
+   }
+
+   .about-us a,
+   .contacts a {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	text-transform: uppercase;
+   	color: #000000;
+   }
+
+   .about-us a:active,
+   .contacts a:active {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+   .footer {
+   	color: #ffffff;
+   	background-color: #464646;
+   }
+
+   .logo-footer {
+   	color: #ffc600;
+   }
+
+   .footer-list,
+   .user-navigation,
+   .social-button-list {
+   	list-style: none;
+   }
+
+   .footer-list a {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	text-transform: uppercase;
+   	color: #ffffff;
+   }
+
+   .user-navigation-footer a {
+   	color: #ffffff;
+   	line-height: 36px;
+   }
+
+   .modal {
+   	color: #000000;
+   	background-color: #ffffff;
+   }
+
+   .modal label {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	color: #000000;
+   }
+
+   .modal-form-send input[type="text"],
+   .modal-form-send input[type="email"],
+   .modal-form-send textarea {
+   	font-family: Open-Sans, Arial, sans-serif;
+   	font-size: 14px;
+   	line-height: 18px;
+   	font-weight: 400;
+   	color: rgba(70, 70, 70, 0.4);
+   	background-color: #f2f2f2;
+   	border: none;
+   }
+
+   .modal-form-send input:hover,
+   .modal-form-send textarea:hover {
+   	background-color: #eaeaea;
+   }
+
+   .modal-form-send input:focus,
+   .modal-form-send textarea:focus {
+   	background-color: #ffffff;
+   	border: 3px solid #f7e296;
+   }
+
+   .modal button {
+   	font-family: Gilroy, Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+
+   	text-align: center;
+   	vertical-align: middle;
+   	color: #000000;
+   	background-color: #ffffff;
+   	text-transform: uppercase;
+   	border: none;
+   }
+
+   .modal button:active {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+
+
+
+   
+
+   
+
+
+
+   
+
+   
+
+

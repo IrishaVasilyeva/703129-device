@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
 
@@ -10,11 +13,11 @@
 
     <header class="main-header">
 		<nav class="main-navigation">			
-			<div class="logo">
+			<div class="logo logo-main">
 				<a>DEVICE</a>
 			</div>
 			<ul class="user-navigation">	
-				<li><a href="#">Поиск по сайту</a></li>
+				<li class="search"><a href="#">Поиск по сайту</a></li>
 				<li><a href="#">Войти</a></li>
 				<li><a href="#">Сравнить</a></li>
 				<li><a href="#">Корзина</a></li>				
@@ -54,18 +57,18 @@
 			    <p>Самая длинная палка для селфи доступна в нашем магазине.
 			     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 			    <a class="button" href="catalog.html">Подробнее</a>
-			    <ul>
+			    <ul class="slider-list">
 				    <li>
-					    <p>8,5 м</p>
-					    <p>Длина палки</p>
+					    <p class="value">8,5 м</p>
+					    <p class="options">Длина палки</p>
 				    </li>
 				    <li>
-					    <p>5 кг</p>
-					    <p>Вес палки</p>
+					    <p class="value">5 кг</p>
+					    <p class="options">Вес палки</p>
 				    </li>
 				    <li>
-					    <p>Карбон</p>
-					    <p>Материал</p>
+					    <p class="value">Карбон</p>
+					    <p class="options">Материал</p>
 				    </li>
 			    </ul>
 		    </div>	
@@ -78,10 +81,10 @@
 			    <p>Мотивирующие фитнес-браслеты помогут найти в себе силы 
                  не пропускать занятия и соблюдать диету.</p>
 			    <a class="button" href="catalog.html">Подробнее</a>
-			    <ul>
+			    <ul class="slider-list">
 				    <li>
-					    <p>48 часов</p>
-					    <p>Без подзарядки</p>
+					    <p class="value">48 часов</p>
+					    <p class="options">Без подзарядки</p>
 				    </li>
 			    </ul>
 		    </div>	
@@ -94,14 +97,14 @@
 			    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
                  мощным лазером, замаскированным под стандартную камеру.</p>
 			    <a class="button" href="catalog.html">Подробнее</a>
-			    <ul>
+			    <ul class="slider-list">
 				    <li>
-					    <p>800 м</p>
-					    <p>Дальность полета</p>
+					    <p class="value">800 м</p>
+					    <p class="options">Дальность полета</p>
 				    </li>
 				    <li>
-					    <p>50 м</p>
-					    <p>Радиус поражения</p>
+					    <p class="value">50 м</p>
+					    <p class="options">Радиус поражения</p>
 				    </li>
 			    </ul>
 			</div>
@@ -115,7 +118,7 @@
 		
 		<section class="popular">
 		    <h2 class="visually-hidden">Каталог товаров</h2>	
-		    <ul>
+		    <ul class="popular-list">
 		    	<li><a href="#"><img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность">Виртуальная реальность</a></li>
 		    	<li><a href="catalog.html"><img src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи">Моноподы для селфи</a></li>
 		    	<li><a href="#"><img src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры">Экшн-камеры</a></li>
@@ -161,7 +164,7 @@
 
 		<section class="partners">
 			<h2 class="visually-hidden">Партнеры</h2>
-			<ul>
+			<ul class="partners-list">
 				<li><a href="#"><img src="img/logo-1.png" width="260" height="100" alt="Партнер1"></a></li>
 				<li><a href="#"><img src="img/logo-2.png" width="260" height="100" alt="Партнер2"></a></li>
 				<li><a href="#"><img src="img/logo-3.png" width="260" height="100" alt="Партнер3"></a></li>
@@ -174,7 +177,7 @@
 			<h2>О нас</h2>	
 			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>	
 			<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>	
-			<ul>
+			<ul class="about-us-list">
 				<li>Деловые линии</li>
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
@@ -192,24 +195,24 @@
 	</main>
 
 
-	<footer>
-		<div class="logo">
+	<footer class="footer">
+		<div class="logo logo-footer">
 			<a>DEVICE</a>
 		</div>
 		<div class="footer-item">
 		<p>Москва, ул. Строителей, 15</p>	
 		</div>
-		<ul>
+		<ul class="footer-list">
 			<li><a href="#">Доставка</a></li>
 			<li><a href="#">Гарантия</a></li>
 			<li><a href="#">Контакты</a></li>
 		</ul>
-		<ul>
+		<ul class="social-button-list">
 			<li><a class="social-button" href="#">Фейсбук</a></li>
 			<li><a class="social-button" href="#">Инстаграм</a></li>
 			<li><a class="social-button" href="#">Твиттер</a></li>
 		</ul>
-		<ul class="user-navigation">	
+		<ul class="user-navigation-footer">	
 			<li><a href="#">Войти</a></li>
 			<li><a href="#">Сравнить</a></li>
 			<li><a href="#">Корзина</a></li>				
@@ -217,8 +220,8 @@
 		<div class="footer-item">
 		<p>Тел.: +7 (495) 495-95-95</p>	
 		</div>
-		<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" width="27" height="35" alt="Академия"></a>
-	</footer>
+		<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" width="27" height="35" alt="Академия"></a>
+	</footer>              
 
 
 	<section class="modal modal-send">
@@ -226,15 +229,15 @@
 		<form class="modal-form-send" action="https://echo.htmlacademy.ru" method="post">
 			<p class="modal-item">
 				<label class="visually-hidden" for="modal-item-name">Ваше имя:</label>
-			    <input id="modal-item-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+			    <input id="modal-item-name" type="text" name="name" placeholder="Имя Фамилия">
 		    </p>
 		    <p class="modal-item">
 		    	<label class="visually-hidden" for="modal-item-email">Ваш e-mail:</label>
-			    <input id="modal-item-email" type="text" name="email" value="" placeholder="email@example.com">
+			    <input id="modal-item-email" type="email" name="email" placeholder="email@example.com">
 		    </p>
 		    <p class="modal-item">
 		    	<label class="visually-hidden" for="modal-item-letter-text">Текст письма:</label>
-			    <input id="modal-item-letter-text" type="text" name="letter-text" value="" placeholder="В свободной форме">
+			    <textarea id="modal-item-letter-text" name="letter-text" placeholder="В свободной форме"></textarea>
 		    </p>
 		    <button class="button" type="submit">Отправить</button>
 		</form>
