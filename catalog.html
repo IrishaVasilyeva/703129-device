@@ -3,19 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Девайс</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
+
 <body>
-
-
 	<header class="main-header">
 		<nav class="main-navigation">			
-			<div class="logo">
+			<div class="logo logo-catalog">
 				<a href="index.html">DEVICE</a>
 			</div>
 			<ul class="user-navigation">	
-				<li><a href="#">Поиск по сайту</a></li>
+				<li class="user-navigation-search"><a href="#">Поиск по сайту</a></li>
 				<li><a href="#">Валентин Петухов</a></li>
-				<li><a href="#">Выйти</a></li>
+				<li class="user-navigation-out"><a href="#">Выйти</a></li>
 				<li><a href="#">Сравнить</a></li>
 				<li><a href="#">Корзина</a></li>				
 			</ul>
@@ -44,7 +47,7 @@
 		<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="#">Каталог товаров</a></li>
-			<li><a>Моноподы для селфи</a></li>
+			<li class="breadcrumbs-current">Моноподы для селфи</li>
 		</ul>
 
 
@@ -53,9 +56,9 @@
 			<h3>Фильтр:</h3>
 			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
 				<fieldset>
-					<legend>Стоимость</legend>
-					
+					<legend>Стоимость</legend>			
 				</fieldset>
+
 				<fieldset>
 					<legend>Цвет</legend>
 					<ul>
@@ -81,6 +84,7 @@
 						</li>
 					</ul>					
 				</fieldset>
+
 				<fieldset>
 					<legend>Bluetooth</legend>
 					<ul>
@@ -102,13 +106,13 @@
 		<section class="assortment">
 			<h2 class="visually-hidden">Сортировка товаров</h2>
 			<h3>Сортировка:</h3>
-			<ul>
-				<li><a>По цене</a></li>
+			<ul class="assortment-list">
+				<li class="assortment-current"><a>По цене</a></li>
 				<li><a href="#">По типу</a></li>
 				<li><a href="#">По популярности</a></li>
 			</ul>
 			
-			<ul>
+			<ul class="assortment-switches">
 				<li><a href="#">Вверх</a></li>
 				<li><a href="#">Вниз</a></li>
 			</ul>			   			
@@ -168,42 +172,42 @@
 
 			
 			<ul class="pagination-list">
-				<li><a class="pagination-item prev-disabled" href="#">Назад</a></li>
-				<li><a class="pagination-item pagination-item-current">1</a></li>
-				<li><a class="pagination-item" href="#">2</a></li>
-				<li><a class="pagination-item" href="#">3</a></li>
-				<li><a class="pagination-item" href="#">Вперед</a></li>
+				<li class="pagination-item-button prev-disabled"><a href="#">Назад</a></li>
+				<li class="pagination-item-current"><a>1</a></li>
+				<li class="pagination-item"><a href="#">2</a></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li class="pagination-item-button prev-disabled"><a href="#">Вперед</a></li>
 			</ul>			
 	</main>
 
 
-	<footer>
-		<div class="logo">
+	<footer class="footer">
+		<div class="logo logo-footer-catalog">
 			<a href="index.html">DEVICE</a>
 		</div>
 		<div class="footer-item">
 		<p>Москва, ул. Строителей, 15</p>	
 		</div>
-		<ul>
+		<ul class="footer-list">
 			<li><a href="#">Доставка</a></li>
 			<li><a href="#">Гарантия</a></li>
 			<li><a href="#">Контакты</a></li>
 		</ul>
-		<ul>
+		<ul class="social-button-list">
 			<li><a class="social-button" href="#">Фейсбук</a></li>
 			<li><a class="social-button" href="#">Инстаграм</a></li>
 			<li><a class="social-button" href="#">Твиттер</a></li>
 		</ul>
-		<ul class="user-navigation">	
+		<ul class="user-navigation-footer">	
 			<li><a href="#">Валентин Петухов</a></li>
-			<li><a href="#">Выйти</a></li>
+			<li class="user-navigation-footer-out"><a href="#">Выйти</a></li>
 			<li><a href="#">Сравнить</a></li>
 			<li><a href="#">Корзина</a></li>				
 		</ul>
 		<div class="footer-item">
 		    <p>Тел.: +7 (495) 495-95-95</p>	
 		</div>
-		<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" width="27" height="35" alt="Академия"></a>
+		<a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" width="27" height="35" alt="Академия"></a>
 	</footer>
 </body>
 </html>

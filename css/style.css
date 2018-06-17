@@ -38,7 +38,7 @@
    	margin: 0;
    	padding: 0;
 
-   	font-family: "Open-Sans", Arial, sans-serif;
+   	font-family: 'Open-Sans', Arial, sans-serif;
    	font-size: 15px;
    	line-height: 30px;
    	font-weight: 400;
@@ -82,8 +82,18 @@
    	color: rgba(0, 0, 0, 0.3);
    }
    
-   .logo a {
-   	font-family: Gilroy, Verdana, sans-serif;
+   .user-navigation-search a,
+   .user-navigation-out a {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+   .user-navigation-search a:hover;
+   .user-navigation-search a:focus {
+   	color: rgba(0, 0, 0, 0.6);
+   }
+   
+   .logo {
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 48px;
    	line-height: 48px;
    	font-weight: 800;
@@ -107,7 +117,7 @@
 
    .site-navigation a,
    .slider-item a {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 18px;
    	line-height: 24px;
    	font-weight: 800;
@@ -115,7 +125,7 @@
    }
 
    .catalog-menu-navigation a {
-   	font-family: Open-Sans, Arial, sans-serif;
+   	font-family: 'Open-Sans', Arial, sans-serif;
    	font-size: 15px;
    	line-height: 36px;
    	font-weight: 400;
@@ -127,7 +137,7 @@
    }
 
    .slider-item span {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 179.2px;
    	line-height: 179.2px;
    	font-weight: 800;
@@ -135,23 +145,23 @@
    }
 
    .slider-item h2 {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 47px;
    	line-height: 56px;
    	font-weight: 800;
     color: #000000;
    }
 
-   p.value {
-   	font-family: Gilroy, Verdana, sans-serif;
+   .value {
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 36px;
    	line-height: 48px;
    	font-weight: 300;
    	color: #000000;
    }
 
-   p.options {
-   	font-family: Open-Sans;
+   .options {
+   	font-family: 'Open-Sans', Arial, sans-serif;
    	font-size: 13px;
    	line-height: 20px;
    	font-weight: 300;
@@ -163,7 +173,7 @@
    }
 
    .popular-list a {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 18px;
    	line-height: 24px;
    	font-weight: 800;
@@ -188,7 +198,7 @@
    }
 
    .services-button button {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 18px;
    	line-height: 24px;
    	font-weight: 800;
@@ -208,7 +218,7 @@
    .services-item h3,
    .about-us h2,
    .contacts h2 {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 47px;
    	line-height: 48px;
    	font-weight: 800;
@@ -220,7 +230,7 @@
    }
 
    .about-us-list {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 16px;
    	line-height: 40px;
    	font-weight: 800;
@@ -229,7 +239,7 @@
 
    .about-us a,
    .contacts a {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 18px;
    	line-height: 24px;
    	font-weight: 800;
@@ -251,14 +261,21 @@
    	color: #ffc600;
    }
 
+   .logo-footer a:hover,
+   .logo-footer a:focus,
+   .logo-footer a:active {
+   	color: #ffc600;
+   }
+
    .footer-list,
    .user-navigation,
-   .social-button-list {
+   .social-button-list,
+   .user-navigation-footer {
    	list-style: none;
    }
 
    .footer-list a {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 18px;
    	line-height: 24px;
    	font-weight: 800;
@@ -266,9 +283,57 @@
    	color: #ffffff;
    }
 
+   .social-button-list a {
+   	color: rgba(255, 255, 255, 0.3);
+   }
+
+   .social-button-list a:hover,
+   .social-button-list a:focus {
+   	color: rgba(255, 255, 255, 0.6);
+   }
+
+   .social-button-list a:active {
+   	color: rgba(255, 255, 255, 0.1);
+   }
+
+   .footer-list a:hover,
+   .footer-list a:focus {
+   	color: rgba(255, 255, 255, 0.6);
+   }
+
+   .footer-list a:active {
+   	color: rgba(255, 255, 255, 0.3);
+   }
+
    .user-navigation-footer a {
-   	color: #ffffff;
+   	color: rgba(255, 255, 255, 0.7);
    	line-height: 36px;
+   }
+
+   .user-navigation-footer a:hover,
+   .user-navigation-footer a:focus {
+   	color: #ffffff;
+   }
+
+   .user-navigation-footer a:active {
+   	color: rgba(255, 255, 255, 0.3);
+   }
+
+   .user-navigation-footer-out a {
+   	color: rgba(255, 255, 255, 0.3);
+   }
+
+   a.logo-academy {
+   	color: #ffc600;
+   }
+
+   a.logo-academy:hover,
+   a.logo-academy:focus {
+   	color: rgba(255, 198, 0, 0.6);
+   }
+
+   a.logo-academy:active {
+   	color: rgba(255, 198, 0, 0.3);
    }
 
    .modal {
@@ -277,7 +342,7 @@
    }
 
    .modal label {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 18px;
    	line-height: 24px;
    	font-weight: 800;
@@ -287,7 +352,7 @@
    .modal-form-send input[type="text"],
    .modal-form-send input[type="email"],
    .modal-form-send textarea {
-   	font-family: Open-Sans, Arial, sans-serif;
+   	font-family: 'Open-Sans', Arial, sans-serif;
    	font-size: 14px;
    	line-height: 18px;
    	font-weight: 400;
@@ -308,7 +373,7 @@
    }
 
    .modal button {
-   	font-family: Gilroy, Verdana, sans-serif;
+   	font-family: 'Gilroy', Verdana, sans-serif;
    	font-size: 18px;
    	line-height: 24px;
    	font-weight: 800;
@@ -324,6 +389,244 @@
    .modal button:active {
    	color: rgba(0, 0, 0, 0.3);
    }
+
+   .logo-catalog a {
+   	color: #000000;
+   }
+
+   .container {
+   	font-family: 'Open-Sans', Arial, sans-serif;
+   	color: #000000;
+   }
+
+   .container h1 {
+   	font-family: 'Gilroy', Verdana, sans-serif;
+   	font-size: 47px;
+   	line-height: 48px;
+   	font-weight: 800;
+   }
+
+   .breadcrumbs {
+   	list-style: none;
+   }
+
+   .breadcrumbs a,
+   .breadcrumbs-current {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+   .breadcrumbs a:hover,
+   .breadcrumbs a:focus {
+   	color: rgba(0, 0, 0, 0.6);
+   }
+
+   .breadcrumbs a:active {
+   	color: rgba(0, 0, 0, 0.1);
+   }
+
+   .aside {
+   	background-color: #efefef;
+   }
+
+   .aside h3 {
+   	font-family: 'Gilroy', Verdana, sans-serif;
+   	font-size: 16px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	text-transform: uppercase;
+   }
+
+   .filter fieldset {
+   	border: none;
+   }
+
+   .filter legend {
+   	font-family: 'Gilroy', Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+   }
+
+   .filter ul {
+   	list-style: none;
+   }
+
+   .filter label {
+   	font-weight: 300;
+   }
+
+   .filter-input:hover,
+   .filter-input:focus {
+    color: #606060;
+   }
+
+   .filter-input:active {
+   	color: #000000;
+   }
+
+   .filter-input:disabled + label {
+    color: #b3b3b3;
+   }
+
+   .filter button {
+   	font-family: 'Gilroy', Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	text-transform: uppercase;
+
+   	text-align: center;
+   	vertical-align: middle;
+   	background-color: #efefef;
+   	border: none;
+   }
+
+   .assortment {
+   	font-size: 14px;
+   	line-height: 18px;
+   	font-weight: 400;
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+   .assortment h3 {
+   	font-family: 'Gilroy', Verdana, sans-serif;
+   	font-size: 16px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	text-transform: uppercase;
+   	color: #000000;
+   }
+
+   .assortment-list,
+   .assortment-switches {
+   	list-style: none;
+   }
+
+   .assortment-list a,
+   .assortment-switches a {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+   .assortment-list a:hover,
+   .assortment-switches a:hover {
+   	color: rgba(0, 0, 0, 0.6);
+   }
+
+   .assortment-list a:active,
+   .assortment-switches a:active,
+   .assortment-current a {
+   	color: #000000;
+   }
+
+   .catalog-list {
+   	list-style: none;
+   }
+
+   .catalog-list h1 {
+   	font-family: 'Gilroy', Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+   }
+
+   .catalog-list-item a {
+   	color: #000000;
+   }
+
+   .catalog-list-item span {
+   	font-family: 'Gilroy', Verdana, sans-serif;
+   	font-size: 16px;
+   	line-height: 24px;
+   	font-weight: 300;
+   	color: #464646;
+   }
+
+   .catalog-item-hover a {
+   	font-family: 'Open-Sans', Arial, sans-serif;
+   	font-size: 13px;
+   	line-height: 36px;
+   	font-weight: 300;
+   	color: rgba(0, 0, 0, 0.5);
+   }
+
+   .catalog-item-hover a:hover {
+   	color: #000000;
+   }
+
+   .catalog-item-hover a:active {
+   	color: rgba(0, 0, 0, 0.2);
+   }
+
+   .catalog-item-hover .button {
+   	font-family: 'Gilroy', Verdana, sans-serif;
+   	font-size: 18px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	color: #000000;
+   	text-transform: uppercase;
+   }
+
+   .catalog-item-hover .button:active {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+   .pagination-list {
+   	list-style: none;
+   	background-color: #ebebeb;
+
+   	font-family: 'Gilroy', Verdana, sans-serif;
+   	font-size: 16px;
+   	line-height: 24px;
+   	font-weight: 800;
+   	text-transform: uppercase;
+   }
+
+   .pagination-item-button a,
+   .pagination-item-current a {
+   	color: #000000;
+   }
+
+   .pagination-item a {
+   	color: rgba(0, 0, 0, 0.3);
+   }
+
+   .pagination-item a:hover,
+   .pagination-item a:focus {
+   	color: rgba(0, 0, 0, 0.6);
+   }
+
+   .pagination-item a:active {
+   	color: #000000;
+   }
+
+   .logo-footer-catalog a {
+   	color: #ffc600;
+   }
+
+   .logo-footer-catalog a:hover,
+   .logo-footer-catalog a:focus {
+   	color: rgba(255, 198, 0, 0.6);
+   }
+
+   .logo-footer-catalog a:active {
+   	color: rgba(255, 198, 0, 0.3);
+   }
+
+
+
+   
+
+
+
+
+ 
+
+
+   
+
+
+
+   
 
 
 
