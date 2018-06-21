@@ -9,20 +9,31 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>-->
 
     <header class="main-header">
-		<nav class="main-navigation">			
+    	<nav class="main-navigation">
+    	<div class="main-header-container">			
 			<div class="logo logo-main">
 				<a>DEVICE</a>
-			</div>
-			<ul class="user-navigation">	
+			</div>		
+			<ul class="user-navigation">
+			  <div class="wrapper">	
 				<li class="search"><a href="#">Поиск по сайту</a></li>
-				<li><a href="#">Войти</a></li>
-				<li><a href="#">Сравнить</a></li>
-				<li><a href="#">Корзина</a></li>				
+			  </div>
+			  <div class="wrapper">
+			  	    <div class="wrapper-inner-1">
+				        <li><a href="#">Войти</a></li>
+			        </div>
+			        <div class="wrapper-inner-2">
+				        <li><a href="#">Сравнить</a></li>
+				        <li><a href="#">Корзина</a></li>
+				    </div>
+			  </div>	
 			</ul>
+
 			<ul class="site-navigation">
+				<div class="wrapper">
 				<li><a href="catalog.html">Каталог товаров</a>
 					<ul class="catalog-menu-navigation">
 						<li><a href="#">Виртуальная реальность</a>
@@ -31,50 +42,60 @@
 						<li><a href="catalog.html">Моноподы для селфи</a></li>
 						<li><a href="#">Умные часы</a></li>
 						<li><a href="#">Экшн-камеры</a></li>
-					</ul>
+					</ul>  				
 				</li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>	
-				<li><a href="#">Контакты</a></li>		
-			</ul>			
+			    </div>
+			    <div class="wrapper">
+			    	<div class="wrapper-inner-1">
+				        <li><a href="#">Доставка</a></li>
+				        <li><a href="#">Гарантия</a></li>
+				    </div>
+				    <li><a href="#">Контакты</a></li>
+				</div>		
+			</ul>
+		</div>
 		</nav>	
 
 
 		<section class="slider">
 		<h1 class="visually-hidden">Хит товары</h1>
 
-		    <div class="slider-button">
+		<div class="main-header-container">
+		   <!-- <div class="slider-button">
 		    	<button class="slider-button-item">1</button>
 		        <button class="slider-button-item">2</button>
-		        <button class="slider-button-item">3</button>			
-		    </div>
+		        <button class="slider-button-item">3</button> 			
+		    </div> -->
 
 
 		    <div class="slider-item">
-			    <span>01</span>
-			    <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">	
-			    <h2>Делай селфи, как Бен Стиллер!</h2>
-			    <p>Самая длинная палка для селфи доступна в нашем магазине.
-			     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-			    <a class="button" href="catalog.html">Подробнее</a>
-			    <ul class="slider-list">
-				    <li>
-					    <p class="value">8,5 м</p>
-					    <p class="options">Длина палки</p>
-				    </li>
-				    <li>
-					    <p class="value">5 кг</p>
-					    <p class="options">Вес палки</p>
-				    </li>
-				    <li>
-					    <p class="value">Карбон</p>
-					    <p class="options">Материал</p>
-				    </li>
-			    </ul>
-		    </div>	
+			    <div class="wrapper">
+			        <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">	
+			    </div>
+			    <div class="wrapper">
+			    	<span>01</span>
+			        <h2>Делай селфи,<br> как Бен Стиллер!</h2>
+			        <p>Самая длинная палка для селфи доступна в нашем магазине.
+			        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+			        <a class="button" href="catalog.html">Подробнее</a>
+			        <ul class="slider-list">
+				        <li>
+					        <p class="value">8,5 м</p>
+					        <p class="options">Длина палки</p>
+				        </li>
+				        <li>
+					        <p class="value">5 кг</p>
+					        <p class="options">Вес палки</p>
+				        </li>
+				        <li>
+					        <p class="value">Карбон</p>
+					        <p class="options">Материал</p>
+				        </li>
+			        </ul>
+		        </div>	
 
 
-		    <div class="slider-item">
+		    <!--<div class="slider-item">
 			    <span>02</span>
 			    <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">	
 			    <h2>Худеем правильно!</h2>
@@ -107,15 +128,17 @@
 					    <p class="options">Радиус поражения</p>
 				    </li>
 			    </ul>
-			</div>
-		</section>	
-	</header>
+			</div> -->
+		    </div>
+	    </div>
+        </section>
+   	</header>
 	
 
 	<main class="container">
 		<h1 class="visually-hidden">Интернет-магазин умных гаджетов"Девайс"</h1>
 
-		
+
 		<section class="popular">
 		    <h2 class="visually-hidden">Каталог товаров</h2>	
 		    <ul class="popular-list">
