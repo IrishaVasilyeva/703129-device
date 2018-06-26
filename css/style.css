@@ -616,16 +616,16 @@
 
 html,
 body {
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0;
+	margin: 0;
 }
 
 .main-header {
-	margin: 0;
+	width: 1200px;
+	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 105px;
-	padding: 0;
+	padding: 0 20px;
 }
 
 .main-navigation {
@@ -685,8 +685,9 @@ body {
 }
 
 .popular {
-	margin: 0;
-	padding: 0;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 	padding-bottom: 80px;
 }
 
@@ -700,14 +701,19 @@ body {
 }
 
 .services {
+	min-width: 1200px;        
+    width: 100%; 
+    
 	margin: 0;
 	padding: 0;
 	padding-bottom: 70px;
 }
 
 .services-container {
-	width: 100%;
+	width: 1200px;
+	padding: 0 20px;
 	padding-top: 82px;
+	margin: 0 auto;
 	display: flex;
 }
 
@@ -724,6 +730,8 @@ body {
 }
 
 .partners {
+	width: 1200px;
+	margin: 0;
 	padding: 95px 20px;
 }
 
@@ -732,26 +740,28 @@ body {
 }
 
 .main-container {
-	padding: 0;
-	margin: 0;
+	width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
 
 .footer {
+	min-width: 1200px;
+	width: 100%;
+	padding: 0;
 	margin: 0;
 	margin-top: 82px;
-	padding: 65px 20px;
 }
 
 .footer-container {
-	width: 100%;
+	width: 1200px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 65px 20px;
 }
 
 .footer-columns {
-	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 	display: flex;
@@ -780,27 +790,33 @@ body {
 }
 
 .catalog-header {
-	margin: 0;
-	margin-top: 20px;
 	margin-bottom: 38px;
-	padding: 0px;
 }
 
+.logo-catalog {
+	padding: 0;
+	padding-bottom: 35px;
+	margin: 0;
+}
+ 
 .catalog-container {
 	margin: 0;
-	padding: 0 20px;
-	padding-left: 60px;
+	padding: 0;
+	/*padding-left: 60px;*/
 }
 
 .catalog-container h1 {
-	margin: 0,
+	margin: 0;
 	margin-bottom: 25px;
+	padding: 0;
+	padding-left: 80px;
 }
 
 .breadcrumbs {
 	margin: 0;
 	margin-bottom: 50px;
 	padding: 0;
+	padding-left: 80px;
 	display: flex;
 	justify-content: flex-start;
 }
