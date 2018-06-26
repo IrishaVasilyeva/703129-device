@@ -621,6 +621,10 @@ body {
 	margin: 0;
 }
 
+.visually-hidden {
+	visibility: hidden;
+}
+
 .main-header {
 	width: 1160px;
 	margin: 0 auto;
