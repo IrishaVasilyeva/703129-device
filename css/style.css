@@ -616,12 +616,13 @@
 
 html,
 body {
+	min-width: 1200px;
 	padding: 0;
 	margin: 0;
 }
 
 .main-header {
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 105px;
@@ -685,7 +686,7 @@ body {
 }
 
 .popular {
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
 	padding: 0 20px;
 	padding-bottom: 80px;
@@ -701,7 +702,7 @@ body {
 }
 
 .services {
-	min-width: 1200px;        
+	min-width: 1160px;        
     width: 100%; 
     
 	margin: 0;
@@ -710,7 +711,7 @@ body {
 }
 
 .services-container {
-	width: 1200px;
+	width: 1160px;
 	padding: 0 20px;
 	padding-top: 82px;
 	margin: 0 auto;
@@ -730,7 +731,7 @@ body {
 }
 
 .partners {
-	width: 1200px;
+	width: 1160px;
 	margin: 0;
 	padding: 95px 20px;
 }
@@ -740,7 +741,7 @@ body {
 }
 
 .main-container {
-	width: 1200px;
+	width: 1160px;
 	padding: 0 20px;
 	margin: 0 auto;
 	display: flex;
@@ -748,7 +749,7 @@ body {
 }
 
 .footer {
-	min-width: 1200px;
+	min-width: 1160px;
 	width: 100%;
 	padding: 0;
 	margin: 0;
@@ -756,7 +757,7 @@ body {
 }
 
 .footer-container {
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
 	padding: 65px 20px;
 }
@@ -800,42 +801,55 @@ body {
 }
  
 .catalog-container {
-	margin: 0;
+	width: 1100px;
+	margin: 0 auto;
 	padding: 0;
-	/*padding-left: 60px;*/
+	padding-left: 80px;
+	padding-right: 20px;
 }
 
 .catalog-container h1 {
-	margin: 0;
+	margin: 0;	
+	padding: 0;	
 	margin-bottom: 25px;
-	padding: 0;
-	padding-left: 80px;
 }
 
 .breadcrumbs {
 	margin: 0;
 	margin-bottom: 50px;
 	padding: 0;
-	padding-left: 80px;
 	display: flex;
 	justify-content: flex-start;
 }
 
+.catalog-columns {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
 .aside {
 	margin: 0;
+	margin-right: auto;
 	padding: 0;
-	width: 270px;
+	
+}
+
+.aside-container {
+	width: 200px;
+	width: 100%;
+	padding: 0;
+	padding-right: 70px;
+	padding-left: 80px;
 }
 
 .assortment-container {
 	margin: 0;
 	padding: 0;
+	padding-right: 20px;
 	width: 830px;
-}
-
-.catalog-columns {
-	display: flex;
-	justify-content: space-between;
 }
 
 .assortment {
