@@ -45,14 +45,14 @@
 		<h1 class="visually-hidden">Хит товары</h1>
 
 		    <div class="slider-button">
-		    	<button class="slider-button-item">1</button>
-		        <button class="slider-button-item">2</button>
-		        <button class="slider-button-item">3</button> 			
+		    	<button class="slider-button-item"></button>
+		        <button class="slider-button-item"></button>
+		        <button class="slider-button-item"></button> 			
 		    </div> 
 
 
 		    <div class="slider-item">
-			    <div class="header-container">
+		    	<div class="header-container">
 			        <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">	
 			    </div>
 			    <div class="header-container">
@@ -62,15 +62,15 @@
 			        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 			        <a class="button" href="catalog.html">Подробнее</a>			        
 			        <ul class="slider-list">
-				        <li>
+				        <li class="parametres">
 					        <p class="value">8,5 м</p>
 					        <p class="options">Длина палки</p>
 				        </li>
-				        <li>
+				        <li class="parametres">
 					        <p class="value">5 кг</p>
 					        <p class="options">Вес палки</p>
 				        </li>
-				        <li>
+				        <li class="parametres">
 					        <p class="value">Карбон</p>
 					        <p class="options">Материал</p>
 				        </li>
@@ -79,7 +79,7 @@
 		    </div>	
 
 
-		    <div class="slider-item">
+		   <div class="slider-item">
 			    <div class="header-container">
 			        <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">	
 			    </div>
@@ -90,7 +90,7 @@
                     не пропускать занятия и соблюдать диету.</p>
 			        <a class="button" href="catalog.html">Подробнее</a>
 			        <ul class="slider-list">
-				        <li>
+				        <li class="parametres">
 					        <p class="value">48 часов</p>
 					        <p class="options">Без подзарядки</p>
 				        </li>
@@ -110,11 +110,11 @@
                     мощным лазером, замаскированным под стандартную камеру.</p>
 			        <a class="button" href="catalog.html">Подробнее</a>
 			        <ul class="slider-list">
-				        <li>
+				        <li class="parametres">
 					        <p class="value">800 м</p>
 					        <p class="options">Дальность полета</p>
 				        </li>
-				        <li>
+				        <li class="parametres">
 					        <p class="value">50 м</p>
 					        <p class="options">Радиус поражения</p>
 				        </li>
@@ -132,12 +132,30 @@
 		<section class="popular">
 		    <h2 class="visually-hidden">Каталог товаров</h2>	
 		    <ul class="popular-list">
-		    	<li><a href="#"><img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность">Виртуальная реальность</a></li>
-		    	<li><a href="catalog.html"><img src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи">Моноподы для селфи</a></li>
-		    	<li><a href="#"><img src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры">Экшн-камеры</a></li>
-		    	<li><a href="#"><img src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслеты">Фитнес-браслеты</a></li>
-		    	<li><a href="#"><img src="img/popular-5.png" width="56" height="98" alt="Умные часы">Умные часы</a></li>
-		    	<li><a href="#"><img src="img/popular-6.png" width="132" height="69" alt="Квадрокоптеры">Квадрокоптеры</a></li>
+		    	<li><a href="#">
+		    		<div><img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность"></div>
+		    		<span>Виртуальная реальность</span></a>
+		    	</li>
+		    	<li><a href="catalog.html">
+		    		<div><img src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи"></div>
+		    		<span>Моноподы для селфи</span></a>
+		    	</li>
+		    	<li><a href="#">
+		    		<div><img src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры"></div>
+		    		<span>Экшн-камеры</span></a>
+		    	</li>
+		    	<li><a href="#">
+		    		<div><img src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслеты"></div>
+		    		<span>Фитнес-браслеты</span></a>
+		    	</li>
+		    	<li><a href="#">
+		    		<div><img src="img/popular-5.png" width="56" height="98" alt="Умные часы"></div>
+		    		<span>Умные часы</span></a>
+		    	</li>
+		    	<li><a href="#">
+		    		<div><img src="img/popular-6.png" width="132" height="69" alt="Квадрокоптеры"></div>
+		    		<span>Квадрокоптеры</span></a>
+		    	</li>
 		    </ul>
 		</section>
 
@@ -147,7 +165,7 @@
 
 			<div class="services-container">
 			<ul class="services-button">
-				<li><button class="button">Доставка</button></li>
+				<li><button class="button first-button">Доставка</button></li>
 				<li><button class="button">Гарантия</button></li>
 				<li><button class="button">Кредит</button></li>
 			</ul>
@@ -160,7 +178,7 @@
 		    </div>
 		    
 
-		    <div class="services-item">
+		    <!--<div class="services-item">
 			    <h3>Гарантия</h3>
 			    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 			    <img src="img/warranty.png" width="171" height="194" alt="Гарантия">			
@@ -172,7 +190,7 @@
 			    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
                  условия кредита. Выгодные для нашего банка, разумеется.</p>
 			    <img src="img/credit.png" width="156" height="186" alt="Кредит">	
-			</div>
+			</div>-->
 			</div>
 
 		</section>
