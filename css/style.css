@@ -39,6 +39,8 @@
 	min-width: 1200px;
 	padding: 0;
 	margin: 0;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 
    body {
@@ -1066,6 +1068,7 @@
    	background-color: #ffffff;
    	position: relative;
    	background-position: 0 0;
+   	visibility: hidden;
    }
 
    .modal label {
@@ -1081,6 +1084,14 @@
    	padding: 77px 100px;
    	position: absolute;
    	top: 1055px;
+   	left: 25%;
+   	margin-left: -141px;
+   	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+   }
+
+   .modal-map {
+   	position: absolute;
+   	top: 1850px;
    	left: 25%;
    	margin-left: -141px;
    	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
@@ -1105,7 +1116,7 @@
    .modal-map .modal-close {
    	position: absolute;
    	top: 23px;
-   	right: 412px;
+   	right: 23px;
    }
 
    .modal-form-send {
@@ -1271,6 +1282,14 @@
    	background-image: url(../img/cart.png);
    	background-position: 0 0;
    	background-repeat: no-repeat;
+   }
+
+   .catalog-menu-navigation {
+   	visibility: hidden;
+   }
+
+   .catalog-menu:hover + .catalog-menu-navigation {
+   	visibility: visible;
    }
 
    .catalog-site-navigation {
