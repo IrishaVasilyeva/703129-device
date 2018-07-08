@@ -25,14 +25,19 @@
 
 			<ul class="site-navigation">
 			    <li class="catalog-link"><a href="catalog.html">Каталог товаров</a>
-					<!--<ul class="catalog-menu-navigation">
-						<li><a href="#">Виртуальная реальность</a>
-						<li><a href="#">Фитнес-браслеты</a></li>
-						<li><a href="#">Квадрокоптеры</a></li>
-						<li><a href="catalog.html">Моноподы для селфи</a></li>
-						<li><a href="#">Умные часы</a></li>
-						<li><a href="#">Экшн-камеры</a></li>
-					</ul>-->				
+					<ul class="catalog-menu-navigation">
+						<li class="catalog-menu-list-one"><a href="#">Виртуальная реальность</a>
+							<ul>
+								<li><a href="catalog.html">Моноподы для селфи</a></li>
+								<li><a href="#">Экшн-камеры</a></li>				
+							</ul> 
+						<li class="catalog-menu-list-two"><a href="#">Фитнес-браслеты</a>
+		                        <ul>
+								    <li><a href="#">Умные часы</a></li>
+							    </ul>
+						</li>
+						<li class="catalog-menu-list-three"><a href="#">Квадрокоптеры</a></li>
+					</ul>				
 				</li>
 			    <li class="delivery-link"><a href="#">Доставка</a></li>
 				<li class="guarantee-link"><a href="#">Гарантия</a></li>	
@@ -286,28 +291,30 @@
 	<section class="modal modal-send">
 		<h2 class="visually-hidden">Форма обратной связи</h2>
 		<form class="modal-form-send" action="https://echo.htmlacademy.ru" method="post">
+			<div class="modal-data">
 			<p class="modal-item">
-				<label class="visually-hidden" for="modal-item-name">Ваше имя:</label>
+				<label class="modal-item-name" for="modal-item-name">Ваше имя:</label>
 			    <input id="modal-item-name" type="text" name="name" placeholder="Имя Фамилия">
 		    </p>
 		    <p class="modal-item">
-		    	<label class="visually-hidden" for="modal-item-email">Ваш e-mail:</label>
+		    	<label class="modal-item-email" for="modal-item-email">Ваш e-mail:</label>
 			    <input id="modal-item-email" type="email" name="email" placeholder="email@example.com">
 		    </p>
+		    </div>
 		    <p class="modal-item">
-		    	<label class="visually-hidden" for="modal-item-letter-text">Текст письма:</label>
+		    	<label class="modal-item-letter-text" for="modal-item-letter-text">Текст письма:</label>
 			    <textarea id="modal-item-letter-text" name="letter-text" placeholder="В свободной форме"></textarea>
 		    </p>
 		    <button class="button" type="submit">Отправить</button>
 		</form>
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
 
 
 	<section class="modal modal-map">
       <h2 class="visually-hidden">Как добраться</h2>
           <img src="img/map-big.png" width="960" height="559" alt="Наш адрес Санкт-Петербург, улица Строителей, 15">
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
 

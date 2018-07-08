@@ -24,14 +24,19 @@
 			</ul>
 			<ul class="site-navigation catalog-site-navigation">
 				<li class="catalog-link"><a href="#">Каталог товаров</a>	
-					<!--<ul class="catalog-menu-navigation">
-						<li><a href="#">Виртуальная реальность</a></li>
-						<li><a href="#">Фитнес-браслеты</a></li>
-						<li><a href="#">Квадрокоптеры</a></li>
-						<li><a>Моноподы для селфи</a></li>
-						<li><a href="#">Умные часы</a></li>
-						<li><a href="#">Экшн-камеры</a></li>
-					</ul>-->
+					<ul class="catalog-menu-navigation">
+						<li class="catalog-menu-list-one"><a href="#">Виртуальная реальность</a>
+							<ul>
+								<li><a href="catalog.html">Моноподы для селфи</a></li>
+								<li><a href="#">Экшн-камеры</a></li>				
+							</ul> 
+						<li class="catalog-menu-list-two"><a href="#">Фитнес-браслеты</a>
+		                        <ul>
+								    <li><a href="#">Умные часы</a></li>
+							    </ul>
+						</li>
+						<li class="catalog-menu-list-three"><a href="#">Квадрокоптеры</a></li>
+					</ul>
 				</li>
 				<li class="delivery-link"><a href="#">Доставка</a></li>
 				<li class="guarantee-link"><a href="#">Гарантия</a></li>	
@@ -152,7 +157,7 @@
 					    </div>
 					    <div class="catalog-item-hover">
 					    	<a class="button" href="#">В корзину</a>				    
-					    	<a href="#">Добавить к сравнению</a>
+					    	<a class="compare" href="#">Добавить к сравнению</a>
 					    </div>
 					</article>			
 				</li>
@@ -165,7 +170,7 @@
 					    </div>
 					    <div class="catalog-item-hover">
 					    	<a class="button" href="#">В корзину</a>				    
-					    	<a href="#">Добавить к сравнению</a>
+					    	<a class="compare" href="#">Добавить к сравнению</a>
 					    </div>
 					</article>			
 				</li>
@@ -178,20 +183,24 @@
 					    </div>
 					    <div class="catalog-item-hover">
 					    	<a class="button" href="#">В корзину</a>				    
-					    	<a href="#">Добавить к сравнению</a>
+					    	<a class="compare" href="#">Добавить к сравнению</a>
 					    </div>
 					</article>			
 				</li>
-				<li class="catalog-list-item new">
+				<li class="catalog-list-item">
 					<article>
 					    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+					    <div class="new">
+					        <span>new</span>  
+					        <div><p class="visually-hidden">new-icon</p></div> 
+					    </div>
 					    <div class="catalog-item-title">
 					        <h1><a href="catalog-item.html">Селфи-палка "Следуй за мной"</a></h1>	
 					        <span>4 900 руб.</span>	
 					    </div>
 					    <div class="catalog-item-hover">
 					    	<a class="button" href="#">В корзину</a>				    
-					    	<a href="#">Добавить к сравнению</a>
+					    	<a class="compare" href="#">Добавить к сравнению</a>
 					    </div>
 					</article>		
 				</li>				
@@ -223,7 +232,7 @@
 		</div>
 
 		<ul class="user-navigation-footer">	
-			<li class="footer-user-link"><a href="#">Валентин Петухов</a></li>
+			<li class="footer-user-link-catalog"><a href="#">Валентин Петухов</a></li>
 			<li class="user-navigation-footer-out"><a href="#">Выйти</a></li>
 			<li class="footer-compare-link"><a href="#">Сравнить</a></li>
 			<li class="footer-cart-link"><a href="#">Корзина</a></li>			
