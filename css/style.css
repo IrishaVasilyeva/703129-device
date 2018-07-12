@@ -91,7 +91,8 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	margin-top: -6px;
 	padding: 0;
-	padding-bottom: 40px;
+	/*padding-bottom: 40px;*/
+	padding-bottom: 32px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -166,7 +167,9 @@ input[type="radio"].visually-hidden {
 }
 
 .search-link form {
-	min-width: 300px;
+	/*min-width: 300px;*/
+	margin-top: -7px;
+	min-width: 315px;
 	font-family: 'Open-Sans', Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
@@ -175,147 +178,144 @@ input[type="radio"].visually-hidden {
 	/*overflow: hidden;*/
 }
 
-.search-link input {
-	min-width: 300px;
+.search-input {
+	/*min-width: 300px;*/
+	min-width: 315px;
 	padding: 0;
 	border: none;
 	background: transparent;
 	color: rgba(0, 0, 0, 0.3);
 	outline: none;
+	position: relative;
 }
 
-.search-link button {
+.search-button {
 	width: 81px;
 	height: 45px;
 	border: 2px solid #000000;
 	background: #f7e296;
 	color: #000000;
-	position: absolute;
-	top: -7px;
-	left: 305px;
-	opacity: 0;
-}
-
-.search-link input[type="search"]:hover,
-.search-link input[type="search"]:focus {
-	color: rgba(0, 0, 0, 0.6);
-	background: transparent;
-}
-
-.search-link input[type="search"]:active {
-	color: #000000;
-	background: transparent;
-}
-
-input[type="search"]::-webkit-input-placeholder {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-input[type="search"]::-moz-placeholder {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-input[type="search"]:-moz-placeholder {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-input[type="search"]:-ms-input-placeholder {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-input[type="search"]:hover::-webkit-input-placeholder {
-	color: rgba(0, 0, 0, 0.6);
-	outline: none;
-}
-
-input[type="search"]:hover::-moz-placeholder {
-	color: rgba(0, 0, 0, 0.6);
-	outline: none;
-}
-
-input[type="search"]:hover:-moz-placeholder {
-	color: rgba(0, 0, 0, 0.6);
-	outline: none;
-}
-
-input[type="search"]:hover:-ms-input-placeholder {
-	color: rgba(0, 0, 0, 0.6);
-	outline: none;
-}
-
-input[type="search"]:focus::-webkit-input-placeholder+.search-link button {
-	color: #000000;
-	border-bottom: 2px solid #000000;
-	outline: none;
-	opacity: 1;
-}
-
-input[type="search"]:focus::-moz-placeholder {
-	color: #000000;
-	outline: none;
-}
-
-input[type="search"]:focus:-moz-placeholder {
-	color: #000000;
-	outline: none;
-}
-
-input[type="search"]:focus:-ms-input-placeholder {
-	color: #000000;
-	outline: none;
-}
-
-input[type="search"]:active::-webkit-input-placeholder {
-	color: #000000;
-	outline: none;
-}
-
-input[type="search"]:active::-moz-placeholder {
-	color: #000000;
-	outline: none;
-}
-
-input[type="search"]:active:-moz-placeholder {
-	color: #000000;
-	outline: none;
-}
-
-input[type="search"]:active:-ms-input-placeholder {
-	color: #000000;
-	outline: none;
-}
-
-.search-link form:hover .search-link button:hover {
-	background: #000000;
-	color: #ffffff;
-}
-
-.search-link button:hover {
-	background: #000000;
-	color: #ffffff;
-	opacity: 1;
-}
-
-.search-link button:active {
-	background: #000000;
-	color: rgba(255, 255, 255, 0.3);
-	opacity: 1;
-}
-
-input[type="search"]:focus+.search-link button,
-input[type="search"]:active+.search-link button {
-	opacity: 1;
-}
-
-.user-navigation .search-link {
-	padding-left: 40px;
 	position: relative;
-	margin-right: 202px;
+	visibility: hidden;
+}
+
+.search-button::after {
+	content: "";
+	position: absolute;
+	top: 41px;
+	left: -358px;
+	width: 360px;
+	height: 2px;
+	background: #000000;
+	visibility: hidden;
 }
 
 .search-link::before {
 	position: absolute;
 	top: 7px;
+	left: 4px;
+	content: "";
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/svg-device/search.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.search-input:hover {
+	color: rgba(0, 0, 0, 0.6);
+	background: transparent;
+}
+
+.search-input:focus {
+	color: #000000;
+}
+
+.search-input:focus + .search-button,
+.search-button:active {
+	visibility: visible;
+	outline: none;
+}
+
+.search-input:focus + .search-button::after {
+	visibility: visible;
+}
+
+.search-input::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input::-moz-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:-moz-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:hover::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+	outline: none;
+}
+
+.search-input:hover::-moz-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+	outline: none;
+}
+
+.search-input:hover:-moz-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+	outline: none;
+}
+
+.search-input:hover:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+	outline: none;
+}
+
+.search-input:focus::-webkit-input-placeholder {
+	color: #000000;
+	outline: none;
+}
+
+.search-input:focus::-moz-placeholder {
+	color: #000000;
+	outline: none;
+}
+
+.search-input:focus:-moz-placeholder {
+	color: #000000;
+	outline: none;
+}
+
+.search-input:focus:-ms-input-placeholder {
+	color: #000000;
+	outline: none;
+}
+
+.search-button:hover {
+	background: #000000;
+	color: #ffffff;
+}
+
+.search-button:active {
+	background: #000000;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.user-navigation .search-link {
+	padding-left: 40px;
+	position: relative;
+	margin-right: 102px;
+}
+
+.search-link::before {
+	position: absolute;
+	top: 8px;
 	left: 4px;
 	content: "";
 	width: 16px;
@@ -332,18 +332,6 @@ input[type="search"]:active+.search-link button {
 	position: relative;
 }
 
-.user-link::before {
-	position: absolute;
-	top: 10px;
-	left: -2px;
-	content: "";
-	width: 13px;
-	height: 12px;
-	background-image: url("../img/svg-device/user.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
 .user-link:hover::before,
 .user-link:focus::before {
 	opacity: 0.6;
@@ -351,6 +339,18 @@ input[type="search"]:active+.search-link button {
 
 .user-link:active::before {
 	opacity: 0.3;
+}
+
+.user-link::before {
+	position: absolute;
+	top: 10px;
+	left: -1px;
+	content: "";
+	width: 13px;
+	height: 12px;
+	background-image: url(../img/svg-device/user.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .compare-link::before {
